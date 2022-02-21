@@ -3,11 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&display=swap');
 
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: #eefffe;
 }
 
 
@@ -18,11 +21,20 @@
     text-decoration: none;
 }
 
-
 a {
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.siteLogo{
+    width: 9rem;
+    height: auto;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    margin-left: 1rem;
 }
 
 
@@ -40,8 +52,8 @@ a {
     margin: 10vh 0 0 0;
     display: flex;
     justify-content: center;
+    color: #0db4ac;
 }
-
 
 .mainIndex__subtitle{
     font-size: 3.8rem;
@@ -49,6 +61,7 @@ a {
     margin: 0 0 0 0;
     display: flex;
     justify-content: center;
+    color: #0db4ac;
 }
 
 .mainIndex__paragraph{
@@ -71,7 +84,14 @@ h5 {
     font-size: 1.7rem;
 }
 
+
 /*DISEÑADORES*/
+
+.mainDiseñadores__title{
+    margin-top: 10vh;
+    font-size: 4rem;
+    color: #0db4ac;
+}
 
 .mainDiseñadores__text{
     display: flex;
@@ -80,16 +100,15 @@ h5 {
     margin: 8vh 0 6vh 0;
 }
 
-.mainDiseñadores__title{
-    margin-top: 2.5vh;
-    font-size: 4rem;
+.album{
+    background-color: #c7fffc7a;
 }
 
-
 .mainDiseñadores__description{
-    font-size: 1.4vh;
+    font-size: 1.8vh;
     margin: 1.5vh 0 3vh 0;
     text-align: center;
+    color: #5c5c5c;
 }
 
 .disenadores-albumContainer{
@@ -107,8 +126,9 @@ h5 {
 }
 
 .mainDiseños__title{
-    font-size: 3vw;
+    font-size: 3rem;
     margin: 0 0 2vh 0;
+    color: #0db4ac;
 }
 
 .mainDiseños__paragraph{
@@ -135,9 +155,9 @@ h5 {
 
 .mainDiseños__cardLink{
     font-weight: 600;
-    color: #4d5353;
-    font-size: 2rem;
-    border-bottom: solid 2px #393a3a;
+    color: #0db4ac;
+    font-size: 1.7rem;
+    border-bottom: solid 2px #0db4ac;
 }
 
 
@@ -151,7 +171,8 @@ h5 {
 
 .mainSobreNostros__title{
     margin: 10vh 0 2vh 0;
-    font-size: 4vw;
+    font-size: 4.5rem;
+    color: #0db4ac;
 }
 
 .mainSobreNostros__paragraph{
@@ -163,6 +184,11 @@ h5 {
     font-weight: 300;
 }
 
+.mainSobreNosotros__image{
+    width: 70vw;
+    height: auto;
+}
+
 .mainSobreNostros__videoTitle{
     font-size: 4rem;
     font-weight: 600;
@@ -172,8 +198,8 @@ h5 {
 
 .mainSobreNostros__video{
     padding-bottom: 7vh; 
-    
 }
+
 
 /*CONTACTO*/
 
@@ -185,13 +211,16 @@ h5 {
 .mainContacto__title{
     font-size: 3rem;
     font-weight: 700;
-    color: #747474;
+    color: #0db4ac;
+    text-align: center;
 }
 
 .mainContacto__paragraph{
     font-size: 1.5rem;
     margin: 0 0 3vh 0;
+    text-align: center;
 }
+
 
 /*FOOTER*/
 
@@ -210,12 +239,167 @@ footer {
 }
 
 .footer__link{
-    padding: 0.5rem 1rem 0 1rem;
-    font-size: 1.8vh;
+    padding: 0.5vh 0.5vw 0 0.5vw;
+    width: 3.7rem;
+    height: auto;
     text-decoration: none;
 }
 
-.navbar-brand {
-    font-size: 1.2rem;
-    margin-left: 1rem;
+
+/*MEDIA QUERIES*/
+
+/*DESKTOP*/
+
+@media screen and (max-width: 1200px){
+
+    /*sobre nosotros*/
+
+    .mainSobreNostros__paragraph{
+        font-size: 2.8rem;
+    }
+
 }
+
+/*TABLET*/
+
+@media screen and (max-width: 768px){
+
+    /*header*/
+
+    a {
+        font-size: 0.9rem;
+    }
+
+    /*index*/
+
+    .mainIndex__title{
+        font-size: 3rem;
+    }
+
+    .mainIndex__subtitle{
+        font-size: 2.7rem;
+    }
+
+    .carouselTitle{
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .carouselLink{
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+
+    /*diseñadores*/
+
+    .mainDiseñadores__title{
+        font-size: 2.8rem;
+    }
+
+    /*diseño*/
+
+    .mainDiseños__cardTitle {
+        font-size: 1.5rem;
+    }
+
+    .mainDiseños__cardName {
+        font-size: 1.5rem;
+    }
+
+    .mainDiseños__cardText{
+        font-size: 1rem;
+    }
+
+    .mainDiseños__cardLink{
+        font-size: 1rem;
+    }
+
+    /*sobre nosotros*/
+
+    .mainSobreNostros__title{
+        font-size: 4rem;
+    }
+
+    .mainSobreNostros__paragraph{
+        font-size: 2rem;
+    }
+
+    .mainSobreNostros__videoTitle{
+        font-size: 3rem;
+    }
+
+    /*contacto*/
+
+    .mainContacto__paragraph{
+        font-size: 1.2rem;
+    }
+
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 480px){
+
+    /*index*/
+
+    .mainIndex__title{
+        font-size: 2.8rem;
+    }
+
+    .mainIndex__subtitle{
+        font-size: 2.1rem;
+    }
+
+    .mainIndex__paragraph{
+        font-size: 1.2rem;
+    }
+
+    /*diseñadores*/
+
+    .mainDiseñadores__title{
+        font-size: 2.3rem;
+    }
+
+
+    /*diseños*/
+
+    .mainDiseños__title{
+        font-size: 2.3rem;
+    }
+
+    .mainDiseños__paragraph{
+        margin-bottom: 0;
+    }
+
+    /*sobre nosotros*/
+
+    .mainSobreNostros__title{
+        font-size: 4rem;
+    }
+
+    .mainSobreNostros__paragraph{
+        font-size: 1.5rem;
+    }
+
+    .mainSobreNostros__videoTitle{
+        font-size: 2rem;
+    }
+
+    /*contacto*/
+
+    .mainContacto{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .mainContacto__title{
+        font-size: 2.3rem;
+    }
+
+    .mainContacto__paragraph{
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+
+}
+
